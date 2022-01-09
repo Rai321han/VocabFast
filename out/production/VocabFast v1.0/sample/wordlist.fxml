@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" onMouseClicked="#disselect" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WordlistController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="700.0" prefWidth="1050.0" styleClass="background" stylesheets="@dashboard.css">
+         <children>
+            <TableView fx:id="tableView" layoutX="79.0" layoutY="204.0" onMouseClicked="#rowcount" prefHeight="466.0" prefWidth="892.0" stylesheets="@dashboard.css">
+              <columns>
+                <TableColumn fx:id="word" prefWidth="201.6000518798828" resizable="false" styleClass="wordcolumn" text="WORD" />
+                <TableColumn fx:id="definition" prefWidth="649.6000061035156" resizable="false" sortable="false" styleClass="definitioncolumn" text="MEANING" />
+              </columns>
+            </TableView>
+            <Button fx:id="addbtn" layoutX="80.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#addword" prefHeight="37.0" prefWidth="94.0" styleClass="add-btn" text="Add" />
+            <TextField fx:id="insertedWord" layoutX="80.0" layoutY="36.0" prefHeight="31.0" prefWidth="282.0" promptText="Word" styleClass="inputFieldword" />
+            <TextArea fx:id="insertedDefinition" layoutX="80.0" layoutY="74.0" prefHeight="65.0" prefWidth="282.0" promptText="Definition" styleClass="definition-textarea" />
+            <Text layoutX="797.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-text" text="Total Words" />
+            <Text fx:id="wordcount" layoutX="769.0" layoutY="103.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="totalword-num" text="0" wrappingWidth="200.0" />
+            <Button fx:id="editBtn" layoutX="424.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#editword" styleClass="add-btn" text="Edit" />
+            <Button fx:id="deleteBtn" layoutX="525.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#deleterow" styleClass="delete-btn" text="Delete" textFill="#5e1212" />
+            <Button fx:id="savebtn" layoutX="80.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#saveword" prefHeight="37.0" prefWidth="94.0" styleClass="add-btn" text="Save" />
+            <Button fx:id="cancelbtn" layoutX="189.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#cancelSave" prefHeight="40.0" prefWidth="115.0" styleClass="delete-btn" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="700.0" prefWidth="150.0" styleClass="sidebar-back" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="260.0" prefWidth="150.0" stylesheets="@dashboard.css">
+               <center>
+                  <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@logoWhite-02.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#wordlist" prefHeight="60.0" prefWidth="150.0" styleClass="nav-btn" text="Wordlist" />
+            <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#playquiz" prefHeight="60.0" prefWidth="150.0" styleClass="nav-btn" text="Play Quiz" />
+            <BorderPane prefHeight="260.0" prefWidth="150.0">
+               <center>
+                  <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="60.0" prefWidth="150.0" styleClass="nav-btn" text="Log Out" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

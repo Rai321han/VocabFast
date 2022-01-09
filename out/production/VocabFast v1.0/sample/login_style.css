@@ -1,0 +1,71 @@
+.root {
+    primary: #4A148C;
+    primary-light: #7C43BD;
+    primary-dark: #12005E;
+    primary-lightest: #F5F3FD;
+    placeholder : #D2D0EB;
+    color-white: #FFFFFF;
+}
+
+.background {
+    -fx-background-color: primary-lightest;
+}
+
+.formback {
+    -fx-background-color: color-white;
+    -fx-background-radius: 5px;
+}
+
+.formHeading{
+    -fx-fill: primary;
+    -fx-font-family: 'sans serif';
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.inputFieldlogin {
+    -fx-border-color: primary ;
+    -fx-border-width: .5px ;
+    -fx-border-radius: 5px;
+    -fx-font-family:'sans serif';
+    -fx-text-fill: primary;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: placeholder;
+}
+
+.inputFieldlogin:focused {
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color:rgba(18, 0, 94, 0.6);
+    -fx-prompt-text-fill: placeholder;
+    -fx-border : 1px;
+}
+
+.login-btn {
+    -fx-background-color: primary-dark;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 30px 10px 30px;
+    -fx-text-fill: color-white;
+    -fx-font-size: 14px;
+
+}
+
+.login-btn:hover {
+    -fx-background-color: primary;
+}
+
+.or-signup {
+    -fx-text-fill: primary;
+    -fx-underline: false;
+}
+
+.or-signup: hover {
+    -fx-text-fill: primary-dark;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}
+
+.or-signup: active {
+    -fx-text-fill: primary-dark;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}
