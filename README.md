@@ -2,11 +2,11 @@ _Assalamu Alaykum_
 
 **Application Name:** VocabFast (Local) (learn VOCAbulary FASTer)  
 **Language:** Java  
-**Client application platform :** JavaFX
-**Stylesheet Language:** CSS (used for application interface)
+**Client application platform :** JavaFX  
+**Stylesheet Language:** CSS (used for application interface)  
 **Platform:** Desktop
 
-**Features
+**Features  
 -----------**
 1. Sign up and login
 1. You can make your own wordlist.
