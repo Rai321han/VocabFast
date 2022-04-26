@@ -1,6 +1,6 @@
 _Assalamu Alaykum_
 
-**Application Name:** VocabFast (learn VOCAbulary FASTer) _LOCAL_ 
+**Application Name:** VocabFast (learn VOCAbulary FASTer) _LOCAL_  
 **Language:** Java  
 **Client application platform :** JavaFX  
 **Stylesheet Language:** CSS (used for application interface)  
